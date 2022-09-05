@@ -1,0 +1,63 @@
+{% extends 'layout.html' %}
+{% block title %} Home {% endblock %}
+
+{% block content %}
+
+<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+<link rel="icon" type="image/png" href="favicon.png" />
+<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+
+
+
+<div class="encabezado2">
+    <br>
+    <h1 class="title">Reconocimiento facial con deep learning y python</h1>
+
+    <div class="entrada" >
+        <p>Los modelos de deep learning se han convertido en los modelos de referencia dentro de muchos ámbitos, uno de ellos, la visión artificial o visión por computación. Un ejemplo de aplicación cada vez más extendido es el del reconocimiento facial, es decir, la identificación automatizada de las personas presentes en una imagen o vídeo.
+            De forma similar a como hacemos los humanos, para que un sistema informático sea capaz de identificar a las personas que aparecen en una imagen, son necesarias varias etapas:</p><br>
+            <ol class="tema-numerales">
+                <li value="1">1.- Detectar las caras en la imagen.</li>
+                <li value="2">2.- Utilizar una red neuronal capaz de mapear las características de una cara humana en una representación numérica. Este paso se conoce como embedding o encoding.</li>
+                <li value="3">3.- Medir la similitud entre la representación numérica de las caras detectadas y las representaciones de referencia disponibles en una base de datos.</li>
+                <li value="4">4.- Determinar si son suficientemente similares para considerar que pertenecen a la misma persona y asignarle la identidad.</li>
+            </ol>
+            <br>
+        <p>Finalmente, se combinan todos ellos para crear un programa capaz de identificar a las personas presentes en una imagen, vídeo o webcam.</p>
+        <br>
+    </div>
+    <div class="img-container">
+        <img width="800px" height="500px" src="./static/img/reconocimiento.png"/>
+    </div>
+
+    <br>
+    <h2 class="subtitle">Deep Learning</h2>
+    <br>
+
+    <div class="entrada2" >
+        
+        <p>El deep learning es un tipo de machine learning que entrena a una computadora para que realice tareas como las hacemos los seres humanos, como el reconocimiento del habla, la identificación de imágenes o hacer predicciones. En lugar de organizar datos para que se ejecuten a través de ecuaciones predefinidas, el deep learning configura parámetros básicos acerca de los datos y entrena a la computadora para que aprenda por cuenta propia reconociendo patrones mediante el uso de muchas capas de procesamiento.</p><br>
+        <p>El deep learning es una de las bases de la inteligencia artificial (AI) y el interés actual en el deep learning se debe en parte al auge que tiene ahora la inteligencia artificial. Las técnicas de deep learning han mejorado la capacidad de clasificar, reconocer, detectar y describir – en una palabra, entender.
+
+            Por ejemplo, el deep learning se utiliza para clasificar imágenes, reconocer el habla, detectar objetos y describir contenido. Sistemas como Siri y Cortana son potenciados, en parte, por el aprendizaje a fondo.
+            
+            Varias novedades están integrando avances ahora al aprendizaje a fondo:</p>
+            <br>
+        <ol class="tema-numerales">
+                <li value="1">1.- Mejoras algorítmicas han elevado el desempeño de los métodos de aprendizaje a fondo.</li>
+                <li value="2">2.- Nuevos métodos de aprendizaje basado en máquina han mejorado la precisión de los modelos. </li>
+                <li value="3">3.- Tenemos muchos más datos disponibles para construir redes neurales con muchas capas profundas, incluyendo datos de streaming de la Internet de las Cosas, datos textuales de medios sociales, notas de médicos y transcripciones de investigaciones.</li>
+                <li value="4">4.- Los adelantos computacionales de la computación en la nube distribuida y unidades de procesamiento gráfico han puesto a nuestra disposición una cantidad increíble de poder de cómputo. Este nivel de poder de cómputo es necesario para entrenar a algoritmos profundos.</li>
+            </ol>
+            <br>
+        <br>
+        <p>Al mismo tiempo, las interfaces de humano a máquina han evolucionado considerablemente también. El mouse y el teclado están siendo reemplazados con gesticulaciones, deslizamientos de los dedos, tacto y lenguaje natural, generando un interés renovado en la inteligencia artificial y el deep learning.</p>
+    </div>
+    <br>
+    <div class="img-container">
+        <img width="800px" height="500px" src="https://www.atriainnovation.com/wp-content/uploads/2021/02/portada.jpg"/>
+      </div>
+   </div>
+    
+{% endblock %}

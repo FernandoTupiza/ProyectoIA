@@ -1,0 +1,58 @@
+<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+<link rel="icon" type="image/png" href="favicon.png" />
+<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+
+{% extends 'layout.html' %} 
+{% block title %} Login {% endblock %}
+{% block content %}
+
+<body>
+    <div class="encabezado">
+
+        <br>
+        <br>
+        <div class="herramientas">
+
+            <div class="herramientas-image-container">
+                <img width="700px"  src="https://cdn-icons-png.flaticon.com/512/2061/2061771.png"/>
+            </div>
+
+            <div class="herramientas-info-container">
+                <form class= "form" action="/base" method="GET">
+                    <div class="form-group">
+                        <button class="boton">Mapeo de Rostro</button>
+                        
+                    </div>
+    
+                </form>
+
+                <form class= "form" action="/entrenamiento" method="GET">
+
+                  
+
+                    <div class="form-group">
+                        <button class="boton">Entrenamiento Algoritmo</button>
+                        
+                    </div>
+    
+                </form>
+
+                <form class= "form" action="/prueba" method="GET">
+
+                 
+    
+    
+                    <div class="form-group">
+                        <button class="boton">>Prueba Algoritmo</button>
+                        
+                    </div>
+    
+                </form>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+{% endblock %}

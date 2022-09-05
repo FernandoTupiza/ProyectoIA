@@ -1,0 +1,50 @@
+<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+<link rel="icon" type="image/png" href="favicon.png" />
+<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+
+{% extends 'layout.html' %} 
+{% block title %} Login {% endblock %}
+{% block content %}
+
+<body>
+    <div class="encabezado">
+
+        <br>
+        <br>
+        <div class="herramientas">
+
+            <div class="herramientas-image-container">
+                <img width="700px"  src="./static//img//faceIDpc.png"/>
+            </div>
+
+            <div class="herramientas-info-container">
+                <form class= "form" action="/video" method="GET">
+
+                    <h1 class="form_titulo">Inicia sesion para acceder a tu perfil</h1><br>
+    
+    
+                    <div class="form-group">
+                        <button class="boton">Probar reconocimiento facial</button>
+                        
+                    </div>
+    
+                </form>
+
+                <form class= "form" action="/profile" method="GET">
+
+                    <h1 class="form_titulo">Si ya validaste tu identidad, accede a tu perfil aqui</h1><br>
+
+                    <div class="form-group">
+                        <button class="boton">Iniciar sesion</button>
+                        
+                    </div>
+    
+                </form>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+{% endblock %}

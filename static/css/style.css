@@ -1,0 +1,262 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+
+.menu{
+    
+    background: #00FFFF;
+    height: 75px;
+    width: 99vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+a{
+    text-decoration: none;
+}
+
+.logo{
+    cursor: pointer;
+    font-size: 30px;
+    padding: 0 80px;
+    font-weight: bold;
+    color: black;
+    
+}
+.logo2{
+    font-size: 34px;
+    padding: 0 40px;
+    font-weight: bold;
+}
+.logo3{
+    margin-left: 10%;
+}
+
+.logo4{
+    margin-left: 21%;
+}
+
+.menu-opc{
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+}
+.menu-opc li{
+    border-radius: 3px;
+    margin: 0 5px;
+}
+.menu-opc li a{
+    padding: 7px 13px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    color: black;
+}
+.menu-opc li :hover{
+    background: blanchedalmond;
+    transition: .4s;
+    color: black;
+}
+.menu-opc li a:hover{
+    color: black;
+}
+.form{
+    width: 400px;
+    height: 200px;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 0px solid black;
+    text-align: center;
+    border-radius: 15px;
+    background-color:cornflowerblue;
+    margin-bottom: 20px;
+    margin-left: 150px;
+    color: black;
+}
+
+.form label{
+    margin: 0;
+    padding: -15px -40px;
+    font-weight: bold;
+    display: block;
+    font-size: 15px;
+}
+
+.form-input{
+    height: 35px;
+    width: 92%;
+    border: 2px solid rgba(201, 195, 195, 0.76);
+    border-radius: 5px;
+}
+
+.form button, .entrada button{
+    border: none;
+    outline: none;
+    color: black;
+    height: 50px;
+    width: 200px;
+    background: #00FFFF;
+    font-size: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    list-style: none;
+    cursor: pointer;
+    
+}
+
+/* login*/
+
+.login{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    padding: 15px;
+  
+}
+.registro{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    padding: 15px;
+    margin-left: 20%;
+}
+
+/* home*/
+
+.encabezado{
+    margin: 0;
+    background-color:black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    height: 719.5;
+    padding: 20px;
+
+}
+
+.encabezado2{
+    margin: 0;
+    background-color:black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    height: 1000;
+    padding: 20px;
+
+}
+
+
+.entrada{
+    font-size:x-large;
+    width: 1400;
+    height: 400;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align:justify;
+    font-size: 19px;
+    color: azure;
+    
+
+}
+
+.entrada2{
+    font-size:x-large;
+    width: 1400;
+    height: 600;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align:justify;
+    font-size: 19px;
+    color: azure;
+    
+
+}
+
+.inicio{
+    color: black;
+    font-size:small;
+    margin-top: 200px;
+    text-align: center;
+    padding: 10px 10px;
+    background: rgba(0, 0, 0, 0.448);
+}
+
+.inicio button{
+    border: none;
+    outline: none;
+    color: white;
+    height: 40px;
+    width: 90px;
+    background: #ffffff;
+    font-size: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.home{
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.448);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.tema-numerales{
+    list-style: none;
+    padding-right: 60px;
+    text-indent: 20px;
+}
+
+.title{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.subtitle{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.herramientas{
+    width: 1400px;
+    height: 500px;
+    display:flex ;
+    flex-direction: row;
+}
+
+.herramientas-image-container{
+    width: 700px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.herramientas-info-container{
+    width: 812px;
+    height: 500px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+}

@@ -1,0 +1,111 @@
+
+{% extends 'layout.html' %} 
+{% block title %} Login {% endblock %}
+{% block content %}
+
+<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+<link rel="icon" type="image/png" href="favicon.png" />
+<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+
+
+
+<body>
+    <div class="encabezado">
+        <br>
+        <h1 class="title">Herramientas y librerias utilizadas para el desarrollo del proyecto</h1>
+        <br>
+        <h1 class="subtitle">1.- Opencv</h1>
+        <br>
+
+        <div class="herramientas">
+
+            <div class="herramientas-image-container">
+                <img width="588px"  src="https://circuitdigest.com/sites/default/files/projectimage_tut/Image-Processing-using-OpenCV-and-Python.jpg"/>
+            </div>
+
+            <div class="herramientas-info-container">
+                <p>OpenCV es una biblioteca libre desarrollada originalmente por Intel. Vio la luz en el año 1999. Escrita originalmente en C/C++, su mejor virtud es que es multiplataforma, se puede ejecutar en diferentes sistemas operativos (Linux, Windows, Mac OS X, Android e iOS). También la podemos utilizar en diferentes lenguajes de programación como Java, Objective C, Python y mi favorito C#. Precisamente para este último existe una versión que se llama EmguCV.</p>
+                <br>
+                <p>La biblioteca OpenCV puede ser usado bajo licencia BSD para proyectos escolares o comerciales, las aplicaciones de esta librería incluyen, la robótica, análisis y procesamiento de imágenes o vídeos, seguimiento y detección de objetos, detección y reconocimiento de rostros, reconocimiento de placas de vehículos, análisis de formas, reconstrucción 3D, realidad aumentada, y mucho más. Entre sus aplicaciones mas conocidas figuran:</p>
+                <br>
+                <ol class="tema-numerales">
+                    <li value="1">1.- Detectando caras y clasificando género.</li>
+                    <li value="2">2.- Obtener pose de cuerpo humano.</li>
+                    <li value="3">3.- Uso de clasificadores para detectar objetos.</li>
+                    <li value="4">4.- Reconocimiento Facial.</li>
+                </ol>
+            </div>
+        </div>
+
+        <br>
+        <h1 class="subtitle">2.- MTCNN</h1>
+        <br>
+
+        <div class="herramientas">
+
+            <div class="herramientas-info-container">
+                <p>MTCNN (Redes convolucionales en cascada multitarea) es una red neuronal convolucional en cascada multitarea, que se utiliza para tratar simultáneamente la detección de rostros y el posicionamiento de puntos clave de rostros. El autor cree que a menudo existe una conexión potencial entre la detección de rostros y la detección de puntos clave de rostros. Sin embargo, la mayoría de los métodos no combinan las dos tareas de manera efectiva. MTCNN hace un uso completo de la conexión potencial entre las dos tareas. La detección de rostros y la detección de puntos clave de rostros se llevan a cabo al mismo tiempo, lo que puede realizar la detección de rostros y la calibración de 5 puntos de características.</p>
+                <br>
+                <p>En la actualidad, la detección de rostros se divide aproximadamente en dos etapas: averiguar todas las áreas candidatas que pueden ser caras y seleccionar el área más probable de las áreas candidatas.
+
+                    Para resolver el problema de dos etapas del reconocimiento facial, MTCNN propone tres redes neuronales convolucionales multitarea en cascada (Proposal Network (P-Net), Refine Network (R-Net), Output Network (O-Net), cada una La red neuronal convolucional multitarea tiene tres tareas de aprendizaje, a saber, clasificación de rostros, regresión de bordes y posicionamiento de puntos clave. La salida de cada nivel se utiliza como entrada del siguiente nivel.</p>
+                <br>
+                
+            </div>
+
+            <div class="herramientas-image-container">
+                <img width="588px"  src="https://i.ytimg.com/vi/moSY8odDQKE/maxresdefault.jpg"/>
+            </div>
+
+        </div>
+
+        <br>
+        <h1 class="subtitle">3.- Tensorflow</h1>
+        <br>
+
+        <div class="herramientas">
+
+            <div class="herramientas-image-container">
+                <img width="588px"  src="https://www.freecodecamp.org/news/content/images/2021/10/tf-vision.png"/>
+            </div>
+
+            <div class="herramientas-info-container">
+                <p>TensorFlow es una biblioteca de código abierto para la computación numérica y Machine Learning a gran escala. TensorFlow reúne una serie de modelos y algoritmos de Machine Learning y Deep Learning y los hace útiles mediante una metáfora común. TensorFlow puede entrenar y ejecutar redes neuronales profundas para la clasificación de dígitos escritos a mano, el reconocimiento de imágenes, la incrustación de palabras, las redes neuronales recurrentes, los modelos secuencia a secuencia para la traducción automática, el procesamiento del lenguaje natural y las simulaciones basadas en ecuaciones diferencias parciales. Lo mejor de todo es que TensorFlow admite predicción de producción a escala, con los mismos modelos utilizados para el entrenamiento.</p>
+                <br>
+                <p>TensorFlow permite a los desarrolladores crear gráficos de flujo de datos, estructuras que describen cómo los datos se mueven a través de un gráfico, o una serie de nodos de procesamiento. Cada nodo del gráfico representa una operación matemática, y cada conexión o arista entre nodos es na matriz de datos multidimensional, o tensor. El mayor beneficio que ofrece TensorFlow para el desarrollo de Deep Learning es la abstracción. En lugar de ocuparse de los detalles de implementación de los algoritmos, o de averiguar la forma adecuada de conectar la salida de una función con la entrada de otra, el desarrollador puede centrarse en la lógica general de la aplicación.</p>
+                <br>
+                
+            </div>
+        </div>
+
+        <br>
+        <h1 class="subtitle">4.- Flask</h1>
+        <br>
+
+        <div class="herramientas">
+
+            <div class="herramientas-info-container">
+                <p>Flask es un “micro” Framework escrito en Python y desarrollado para simplificar y hacer más fácil la creación de Aplicaciones Web bajo el patrón MVC.
+
+                    La palabra “micro” no quiere decir que se trate de un proyecto pequeño o que nos sirva para hacer páginas web pequeñas, al instalar Flask disponemos de las herramientas necesarias para crear una aplicación web funcional. Es probable que en algún momento se necesite una nueva funcionalidad que no se tiene de primeras con la instalación, para eso encontrarás un gran conjunto de extensiones (plugins) que se pueden instalar fácilmente con Flask y que te permitirán añadirle todas las funcionalidades que necesites.
+                    
+                    En cuanto al patrón MVC, este es una forma de trabajar que permite diferenciar y separar lo que es la vista (página HTML), el modelo de datos (los datos que va a tener la App), y el controlador (donde se gestionan las peticiones de la app web).</p>
+                <br>
+                <p>En este sentido, podríamos pensar que el segundo es una variante del primero. Y que, en definitiva, Flask es un framework «minimalista», que no requiere de otras dependencias para hacer cosas básicas. También nos ofrece una curva de aprendizaje muy baja para comenzar a entenderlo.
+
+                    Todo esto hace que si decidimos comenzar a desarrollar soluciones Web con Python, Flask puede ser un muy buen punto de entrada.</p>
+                <br>
+                
+            </div>
+
+            <div class="herramientas-image-container">
+                <img width="588px"  src="https://blog.facialix.com/wp-content/uploads/2022/06/curso-gratis-python-flask-facialix.jpg"/>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+{% endblock %}
